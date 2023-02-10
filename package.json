@@ -1,0 +1,57 @@
+{
+    "name": "onesec-snippets",
+    "displayName": "onesec-snippets",
+    "description": "Quick typescript-react snippets to shorten code writing...",
+    "version": "1.0.0",
+    "icon": "images/react.png",
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "scripts": {
+        "build": "yarn clean && vsce package",
+        "clean": "rm -rf xasnippets-*.vsix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Tom-xacademy/onesec-snippets"
+    },
+    "keywords": [
+        "tomie",
+        "react",
+        "onemin",
+        "react",
+        "snippets",
+        "typescript",
+        "codesnippets",
+        "typescriptreact"
+    ],
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/tsreact.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/tsreact.code-snippets"
+            },
+            {
+                "language": "json",
+                "path": "./snippets/jsnip.code-snippets"
+            }
+        ]
+    },
+    "author": "tamas.xacademy@gmail.com",
+    "bugs": {
+        "url": "https://github.com/Tom-xacademy/onesec-snippets/issues"
+    },
+    "homepage": "https://github.com/Tom-xacademy/onesec-snippets#readme",
+    "__metadata": {
+        "id": "",
+        "publisherId": "",
+        "publisherDisplayName": "Tomi"
+    }
+}
