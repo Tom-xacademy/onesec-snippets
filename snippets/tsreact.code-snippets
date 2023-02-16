@@ -581,6 +581,18 @@
         ],
         "description": "Generates a GET DAO request method, which loads a list."
     },
+    "XADAOFooGetOneWOId": {
+        "prefix": "daofoogetitem",
+        "body": [
+            "public static async load${1} (): Promise<${2}Model> {",
+            "    const request = await axios",
+            "        .getInstance()",
+            "        .get<IDynamicObject<any>>(`${3}`)",
+            "    return new ${2}Model(request.data);",
+            "}"
+        ],
+        "description": "Generates a GET DAO request method, which loads an item of something."
+    },
     "XADAOFooGetOne": {
         "prefix": "daofoogetone",
         "body": [
@@ -632,9 +644,10 @@
             "}",
             "",
             "public static async remove${1} (id: string): Promise<void> {",
-            "    return await axios",
+            "    await axios",
             "        .getInstance()",
             "        .delete<void>(`${3}/${ id }`);",
+            "    return;",
             "}${4}"
         ],
         "description": "Generates all the DAO request methods (POST/GET/PATCH/DELETE)."

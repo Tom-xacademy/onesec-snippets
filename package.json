@@ -2,7 +2,7 @@
     "name": "onesec-snippets",
     "displayName": "onesec-snippets",
     "description": "Quick typescript-react snippets to shorten code writing...",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icon": "images/react.png",
     "engines": {
         "vscode": "^1.75.0"
